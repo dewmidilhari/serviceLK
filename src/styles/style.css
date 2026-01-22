@@ -1,0 +1,75 @@
+/* ===== CONTACT PAGE COLORS ===== */
+
+.colorful-bg {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  padding: 60px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #eaf6ff;
+  margin-bottom: 40px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.contact-form h3,
+.contact-info h3 {
+  color: #0077cc;
+  margin-bottom: 15px;
+}
+
+.contact-form label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.btn-primary {
+  margin-top: 15px;
+  width: 100%;
+  background: #0077cc;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #005fa3;
+}
+
+.footer {
+  background: #002b4f;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+}
