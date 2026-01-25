@@ -1,39 +1,60 @@
-# serviceLK 
+# serviceLK
 
 ## Group Information
-- **Student 1:** H. Dewmi Dilhari - ITBIN-2313-0024 - Role: DevOps Engineer & CI/CD Manager
-- **Student 2:** K. Hiruni Dineka - ITBIN-2313-0028 - Role: Frontend Developer & UI Designer
+- **Student 1:** H. Dewmi Dilhari  
+  **Index No:** ITBIN-2313-0024  
+  **Role:** DevOps Engineer & CI/CD Manager
+
+- **Student 2:** K. Hiruni Dineka  
+  **Index No:** ITBIN-2313-0028  
+  **Role:** Frontend Developer & UI Designer
+
+---
 
 ## Project Description
 serviceLK is a simple frontend web application designed to showcase services offered by a service provider.  
-The application includes multiple pages such as Home, About, Services, and Contact, following a clean and user-friendly design.
+The website includes multiple pages such as Home, About, Services, and Contact, with a clean and user-friendly design.
+
+---
 
 ## Live Deployment
-🔗 **Live URL:** https://your-github-username.github.io/serviceLK
+🔗 **Live URL:** https://dewmidilhari.github.io/serviceLK/
+
+---
 
 ## Technologies Used
-- HTML5, CSS3, JavaScript
-- GitHub Actions
-- GitHub Pages
+- HTML5
+- CSS3
+- JavaScript
+- GitHub Actions (CI)
+- GitHub Pages (Deployment)
+
+---
 
 ## Features
-- Multi-page frontend website
-- Clean and user-friendly UI
+- Multi-page static website
+- Clean and responsive UI
 - Navigation between pages
-- Automated deployment using GitHub Actions
+- CI pipeline using GitHub Actions
+- Deployment using GitHub Pages
+
+---
 
 ## Branch Strategy
-We implemented the following branching strategy:
-- `main` - Production branch
-- `develop` - Integration branch
-- `feature/*` - Feature development branches
+- `main` – Production branch
+- `develop` – Integration branch
+- `feature/*` – Feature development branches
+
+---
 
 ## Individual Contributions
 
 ### H. Dewmi Dilhari
-- Repository setup and Git configuration
-- GitHub Actions CI/CD pipeline implementation
-- Deployment setup using GitHub Pages
+- Repository initialization and branch setup
+- CI workflow configuration using GitHub Actions
+- GitHub Pages deployment configuration
 
 ### K. Hiruni Dineka
-- Frontend UI design and d
+- UI design and frontend page development
+- HTML structure and CSS styling
+- Navigation and layout improvements
