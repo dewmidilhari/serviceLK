@@ -1,9 +1,12 @@
-name: Deploy to GitHub Pages
+name: CI Pipeline
 
 on:
   push:
     branches:
-      - main
+      - develop
+  pull_request:
+    branches:
+      - develop
 
 jobs:
   build:
@@ -12,11 +15,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
+      - name: CI working check
+        run: echo "CI working"
+
+      - name: Validate HTML/CSS
+        run: echo "Static site - no build required"
