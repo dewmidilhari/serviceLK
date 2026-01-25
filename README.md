@@ -1,4 +1,4 @@
-# serviceLK Frontend Web Application
+# serviceLK 
 
 ## Group Information
 - **Student 1:** H. Dewmi Dilhari - ITBIN-2313-0024 - Role: DevOps Engineer & CI/CD Manager
