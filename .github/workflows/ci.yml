@@ -2,6 +2,13 @@ name: CI Pipeline
 
 on:
   push:
+<<<<<<< HEAD
+=======
+    branches:
+      - main
+      - develop
+  pull_request:
+>>>>>>> 9b70ebc5f1a9c829f614678be6fd02b7d3e5b85d
     branches:
       - develop
 
@@ -11,7 +18,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+<<<<<<< HEAD
       - run: echo "CI working"
+=======
+      - name: CI Test
+        run: echo "CI working"
+>>>>>>> 9b70ebc5f1a9c829f614678be6fd02b7d3e5b85d
 
       - name: Validate HTML/CSS
         run: echo "No build steps (static site)"
