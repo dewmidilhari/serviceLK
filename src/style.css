@@ -1,218 +1,273 @@
-/* ===== Global ===== */
+/* =====================================================
+   GOOGLE FONT
+===================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* =====================================================
+   RESET + BASE
+===================================================== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  color: #333;
+  background: linear-gradient(135deg, #eef2ff, #fdf4ff);
+  color: #1f2937;
+  line-height: 1.8;
+  font-size: 16px;
 }
 
-/* ===== Container ===== */
+/* =====================================================
+   CONTAINER
+===================================================== */
 .container {
   width: 90%;
-  max-width: 1100px;
-  margin: 0 auto;
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px 0;
 }
 
-/* ===== Header ===== */
+/* =====================================================
+   HEADER / NAVBAR
+===================================================== */
 .header {
-  background: linear-gradient(90deg, #0b3d91, #1e90ff);
-  color: #fff;
-  padding: 20px 0;
+  background: linear-gradient(90deg, #7c3aed, #2563eb, #06b6d4);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.2);
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.nav {
-  display: flex;
-  gap: 25px;
-  margin-top: 10px;
+  font-size: 32px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 1px;
 }
 
 .nav a {
-  color: #fff;
+  margin-left: 28px;
   text-decoration: none;
+  color: #fff;
+  font-weight: 500;
   font-size: 16px;
-  font-weight: 600;
-  transition: color 0.3s;
+  position: relative;
 }
 
-.nav a.active,
-.nav a:hover {
-  color: #ffd700;
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 0;
+  height: 3px;
+  background: #facc15;
+  transition: 0.4s;
 }
 
-/* ===== Hero ===== */
+.nav a:hover::after,
+.nav a.active::after {
+  width: 100%;
+}
+
+/* =====================================================
+   HOME PAGE HERO
+===================================================== */
 .hero {
-  padding: 90px 0;
-  background: linear-gradient(135deg, #ffffff, #f0f7ff);
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
-  border-radius: 0 0 40px 40px;
+  color: #fff;
+  background:
+    linear-gradient(rgba(15,23,42,0.7), rgba(37,99,235,0.75)),
+    url("https://images.unsplash.com/photo-1581578731548-c64695cc6952");
+  background-size: cover;
+  background-position: center;
+  padding: 0 20px;
 }
 
 .hero h2 {
-  font-size: 38px;
-  margin-bottom: 15px;
-  color: #0b3d91;
+  font-size: 56px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #f97316, #facc15, #7c3aed, #2563eb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero p {
   font-size: 20px;
-  line-height: 1.6;
-  margin-bottom: 25px;
+  max-width: 650px;
+  margin: auto;
 }
 
-/* ===== Button ===== */
+/* =====================================================
+   SERVICES PAGE HERO (DIFFERENT LOOK)
+===================================================== */
+body:has(.services-grid) .hero {
+  background:
+    linear-gradient(rgba(124,58,237,0.75), rgba(236,72,153,0.75)),
+    url("https://images.unsplash.com/photo-1581090700227-1e37b190418e");
+}
+
+/* =====================================================
+   BUTTON
+===================================================== */
 .btn {
-  background: linear-gradient(135deg, #ff8c00, #ff4500);
-  color: #fff;
-  padding: 14px 30px;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: 700;
+  margin-top: 35px;
   display: inline-block;
-  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 16px 45px;
+  border-radius: 40px;
+  background: linear-gradient(90deg, #f97316, #facc15);
+  color: #111827;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.4s;
+  box-shadow: 0 15px 40px rgba(249,115,22,0.4);
 }
 
 .btn:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-6px) scale(1.05);
 }
 
-/* ===== Services Section ===== */
-.services-section {
-  margin-top: 60px;
+/* =====================================================
+   PAGE HEADINGS
+===================================================== */
+main h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  background: linear-gradient(90deg, #7c3aed, #2563eb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.services-section h2 {
-  text-align: center;
-  font-size: 36px;
-  margin-bottom: 30px;
-  color: #ffd700;
+main p {
+  font-size: 17px;
+  max-width: 850px;
+  margin-bottom: 25px;
 }
 
+/* =====================================================
+   SERVICES PAGE
+===================================================== */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 35px;
+  margin-top: 50px;
 }
 
 .service-card {
-  background: linear-gradient(135deg, #ffecd2, #fcb69f);
-  padding: 25px;
+  padding: 40px 25px;
   border-radius: 25px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s;
+  text-align: center;
+  background: linear-gradient(135deg, #ecfeff, #eef2ff);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+  transition: 0.4s;
 }
 
-.service-card:hover {
-  transform: translateY(-10px);
+.service-card:nth-child(1) {
+  background: linear-gradient(135deg, #fee2e2, #fecaca);
+}
+.service-card:nth-child(2) {
+  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+}
+.service-card:nth-child(3) {
+  background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+}
+.service-card:nth-child(4) {
+  background: linear-gradient(135deg, #fef9c3, #fde68a);
 }
 
 .service-card h3 {
-  font-size: 24px;
+  font-size: 22px;
   margin-bottom: 10px;
-  color: #b22222;
 }
 
-.service-card p {
-  font-size: 16px;
-  line-height: 1.5;
+.service-card:hover {
+  transform: translateY(-12px) rotate(-1deg);
 }
 
-/* ===== About Section ===== */
+/* =====================================================
+   ABOUT PAGE – EXTRA DESIGN
+===================================================== */
 .about-section {
-  background: linear-gradient(135deg, #ffffff, #e6f0ff);
-  padding: 45px;
-  border-radius: 25px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #faf5ff, #eff6ff);
+  padding: 70px 40px;
+  border-radius: 35px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.12);
 }
 
-.about-section h2 {
-  text-align: center;
-  font-size: 34px;
-  margin-bottom: 20px;
-  color: #1e90ff;
-}
-
-.about-section p {
-  font-size: 18px;
-  line-height: 1.7;
-  margin-top: 10px;
-}
-
-/* ===== Contact Section ===== */
-.contact-section {
-  background: linear-gradient(135deg, #ffffff, #f0fff4);
-  padding: 45px;
-  border-radius: 25px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-}
-
-.contact-section h2 {
-  text-align: center;
-  font-size: 34px;
-  margin-bottom: 20px;
-  color: #0b3d91;
-}
-
-.contact-section p {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 18px;
-}
-
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 25px;
-}
-
-.contact-form label {
+/* Decorative cards */
+.about-section::after {
+  content: "";
   display: block;
-  margin-top: 15px;
-  margin-bottom: 5px;
-  font-weight: 600;
+  height: 6px;
+  width: 120px;
+  margin-top: 25px;
+  background: linear-gradient(90deg, #7c3aed, #06b6d4);
+  border-radius: 10px;
+}
+
+/* =====================================================
+   CONTACT PAGE
+===================================================== */
+.contact-form {
+  max-width: 520px;
+  background: linear-gradient(135deg, #ffffff, #f9fafb);
+  padding: 45px;
+  border-radius: 30px;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.15);
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 12px;
-  border: 2px solid #1e90ff;
-  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 18px;
+  border-radius: 12px;
+  border: 2px solid #c7d2fe;
   font-size: 15px;
 }
 
-/* ===== Footer ===== */
-.footer {
-  background: linear-gradient(90deg, #0b3d91, #1e90ff);
-  padding: 25px 0;
-  text-align: center;
-  color: white;
-  margin-top: 60px;
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #7c3aed;
 }
 
-/* ===== Responsive ===== */
+/* =====================================================
+   FOOTER
+===================================================== */
+.footer {
+  margin-top: 90px;
+  padding: 30px;
+  text-align: center;
+  background: linear-gradient(90deg, #7c3aed, #2563eb);
+  color: white;
+  font-size: 14px;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
 @media (max-width: 768px) {
-  .services-grid,
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hero {
-    padding: 50px 0;
-  }
-
-  .nav {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+  .hero h2 { font-size: 38px; }
+  main h2 { font-size: 32px; }
+  .logo { font-size: 26px; }
+  .nav a { margin-left: 15px; font-size: 14px; }
 }
