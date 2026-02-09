@@ -2,24 +2,21 @@ name: CI Pipeline
 
 on:
   push:
+    branches: [ develop, main, feature/* ]
 
-    branches:
-      - develop
-
-    branches: [ develop ]
   pull_request:
-    branches: [ develop ]
-
+    branches: [ develop, main ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-      - run: echo "CI working"
+      - name: CI check
+        run: echo "CI pipeline running OK"
 
-
-      - name: Validate HTML/CSS
-        run: echo "No build steps (static site)"
-
+      - name: Validate static site
+        run: echo "Static HTML/CSS project — no build step"
