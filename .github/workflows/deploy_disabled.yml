@@ -4,9 +4,10 @@ on:
   push:
     branches:
       - main
+      - develop
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -17,4 +18,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./src
+          publish_dir: .
