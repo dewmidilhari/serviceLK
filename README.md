@@ -13,7 +13,8 @@ serviceLK is a simple frontend web application designed to showcase services off
 The application includes multiple pages such as Home, About, Services, and Contact, following a clean and user-friendly design.
 
 ## Live Deployment
-🔗 **Live URL:** https://your-github-username.github.io/serviceLK
+🔗 **Live URL:** 🔗 Live URL: https://dewmidilhari.github.io/serviceLK/
+
 
 ## Technologies Used
 - HTML5, CSS3, JavaScript
