@@ -1,7 +1,7 @@
 # serviceLK Frontend Web Application
 
-![CI Pipeline](https://github.com/dewmidilhari/serviceLK/workflows/ci.yml/badge.svg)
-![Deploy](https://github.com/dewmidilhari/serviceLK/workflows/deploy.yml/badge.svg)
+![CI Pipeline](https://github.com/dewmidilhari/serviceLK/workflows/CI%20Pipeline/badge.svg)
+![Deploy](https://github.com/dewmidilhari/serviceLK/workflows/Deploy%20to%20Production/badge.svg)
 
 ## Group Information
 - **Student 1:** H. Dewmi Dilhari - ITBIN-2313-0024 - Role: DevOps Engineer & CI/CD Manager
