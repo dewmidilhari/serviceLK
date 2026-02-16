@@ -34,10 +34,24 @@ We implemented the following branching strategy:
 
 ## Individual Contributions
 
-### H. Dewmi Dilhari
-- Repository setup and Git configuration
-- GitHub Actions CI/CD pipeline implementation
-- Deployment setup using GitHub Pages
+### H. Dewmi Dilhari - DevOps Engineer & CI/CD Manager
+- Repository setup & Git configuration
 
-### K. Hiruni Dineka
-- Frontend UI design and d
+- Branching strategy implementation
+
+- CI/CD workflow creation
+
+- GitHub Actions pipeline setup
+
+- Production deployment configuration
+
+### K. Hiruni Dineka - Frontend Developer & UI Designer
+- UI/UX design implementation
+
+- Page layout and styling
+
+- Multi-page navigation structure
+
+- Responsive frontend development
+
+- Content structuring
