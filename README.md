@@ -32,6 +32,25 @@ We implemented the following branching strategy:
 - `develop` - Integration branch
 - `feature/*` - Feature development branches
 
+## Challenges Faced
+
+During the development and deployment of this project, several challenges were encountered:
+
+### 1. CI/CD Pipeline Configuration  
+Setting up the GitHub Actions workflow correctly required proper configuration of YAML files and branch triggers.
+
+### 2. Deployment Configuration  
+Ensuring the project deployed automatically to the production environment without errors required debugging path and build issues.
+
+### 3. Branch Management  
+Maintaining proper branch synchronization and avoiding merge conflicts between `develop` and `main` branches required careful coordination.
+
+### 4. Responsive Design Adjustments  
+Ensuring consistent layout across different screen sizes required multiple CSS refinements.
+
+### 5. Debugging Frontend Issues  
+Fixing broken links, navigation issues, and styling inconsistencies required thorough testing.
+
 ## Individual Contributions
 
 ### H. Dewmi Dilhari - DevOps Engineer & CI/CD Manager
