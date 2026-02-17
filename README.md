@@ -32,7 +32,7 @@ We implemented the following branching strategy:
 - `develop` - Integration branch
 - `feature/*` - Feature development branches
 
-## 🚧 Challenges Faced
+## Challenges Faced
 
 During the development and deployment of this project, several challenges were encountered:
 
@@ -59,7 +59,7 @@ Fixing broken links, navigation issues, and styling inconsistencies required tho
 - GitHub Actions CI/CD pipeline implementation
 - Deployment setup using GitHub Pages
 
-### 🎨 K. Hiruni Dineka  
+### K. Hiruni Dineka  
 **Role: Frontend Developer & UI Designer**
 
 - UI/UX design implementation  
