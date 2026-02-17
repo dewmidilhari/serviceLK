@@ -12,7 +12,7 @@ serviceLK is a simple frontend web application designed to showcase services off
 The application includes multiple pages such as Home, About, Services, and Contact, following a clean and user-friendly design.
 
 ## Live Deployment
-🔗 **Live URL:** https://serviceslk.vercel.app/
+🔗 **Live URL:** 🔗 Live URL: https://dewmidilhari.github.io/serviceLK/
 
 
 ## Technologies Used
@@ -32,26 +32,38 @@ We implemented the following branching strategy:
 - `develop` - Integration branch
 - `feature/*` - Feature development branches
 
+## 🚧 Challenges Faced
+
+During the development and deployment of this project, several challenges were encountered:
+
+### 1. CI/CD Pipeline Configuration  
+Setting up the GitHub Actions workflow correctly required proper configuration of YAML files and branch triggers.
+
+### 2. Deployment Configuration  
+Ensuring the project deployed automatically to the production environment without errors required debugging path and build issues.
+
+### 3. Branch Management  
+Maintaining proper branch synchronization and avoiding merge conflicts between `develop` and `main` branches required careful coordination.
+
+### 4. Responsive Design Adjustments  
+Ensuring consistent layout across different screen sizes required multiple CSS refinements.
+
+### 5. Debugging Frontend Issues  
+Fixing broken links, navigation issues, and styling inconsistencies required thorough testing.
+
+
 ## Individual Contributions
 
-### H. Dewmi Dilhari - DevOps Engineer & CI/CD Manager
-- Repository setup & Git configuration
+### H. Dewmi Dilhari
+- Repository setup and Git configuration
+- GitHub Actions CI/CD pipeline implementation
+- Deployment setup using GitHub Pages
 
-- Branching strategy implementation
+### 🎨 K. Hiruni Dineka  
+**Role: Frontend Developer & UI Designer**
 
-- CI/CD workflow creation
-
-- GitHub Actions pipeline setup
-
-- Production deployment configuration
-
-### K. Hiruni Dineka - Frontend Developer & UI Designer
-- UI/UX design implementation
-
-- Page layout and styling
-
-- Multi-page navigation structure
-
-- Responsive frontend development
-
-- Content structuring
+- UI/UX design implementation  
+- Page layout and styling  
+- Multi-page navigation structure  
+- Responsive frontend development  
+- Content structuring  
