@@ -12,7 +12,7 @@ serviceLK is a simple frontend web application designed to showcase services off
 The application includes multiple pages such as Home, About, Services, and Contact, following a clean and user-friendly design.
 
 ## Live Deployment
-🔗 **Live URL:** 🔗 Live URL: https://dewmidilhari.github.io/serviceLK/
+🔗 **Live URL:** https://serviceslk.vercel.app/
 
 
 ## Technologies Used
@@ -51,14 +51,16 @@ Ensuring consistent layout across different screen sizes required multiple CSS r
 ### 5. Debugging Frontend Issues  
 Fixing broken links, navigation issues, and styling inconsistencies required thorough testing.
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
 ## Individual Contributions
 
-### H. Dewmi Dilhari
-- Repository setup and Git configuration
-- GitHub Actions CI/CD pipeline implementation
-- Deployment setup using GitHub Pages
+### H. Dewmi Dilhari - DevOps Engineer & CI/CD Manager
+- Repository setup & Git configuration
 
+<<<<<<< HEAD
 ### K. Hiruni Dineka  
 **Role: Frontend Developer & UI Designer**
 
@@ -67,3 +69,23 @@ Fixing broken links, navigation issues, and styling inconsistencies required tho
 - Multi-page navigation structure  
 - Responsive frontend development  
 - Content structuring  
+=======
+- Branching strategy implementation
+
+- CI/CD workflow creation
+
+- GitHub Actions pipeline setup
+
+- Production deployment configuration
+
+### K. Hiruni Dineka - Frontend Developer & UI Designer
+- UI/UX design implementation
+
+- Page layout and styling
+
+- Multi-page navigation structure
+
+- Responsive frontend development
+
+- Content structuring
+>>>>>>> main
