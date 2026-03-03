@@ -20,6 +20,19 @@ The application includes multiple pages such as Home, About, Services, and Conta
 - GitHub Actions
 - GitHub Pages
 
+## Docker Containerization
+
+This project is fully containerized using Docker and Docker Compose to ensure consistent development and deployment environments.
+
+### 🔧 Prerequisites
+- Docker Desktop
+- Git
+
+### Clone the Repository
+```bash
+git clone https://github.com/dewmidilhari/serviceLK
+cd serviceLK
+
 ## Features
 - Multi-page frontend website
 - Clean and user-friendly UI
