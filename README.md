@@ -22,16 +22,26 @@ The application includes multiple pages such as Home, About, Services, and Conta
 
 ## Docker Containerization
 
-This project is fully containerized using Docker and Docker Compose to ensure consistent development and deployment environments.
+This project is fully containerized using Docker and Docker Compose.
 
 ### Prerequisites
+Make sure the following are installed:
 - Docker Desktop
 - Git
 
 ### Clone the Repository
-
-git clone https://github.com/dewmidilhari/serviceLK
+git clone https://github.com/dewmidilhari/serviceLK  
 cd serviceLK
+
+### Build and Run Containers
+docker-compose up --build
+
+### Access the Application
+Open your browser and go to:
+http://localhost:8080/ 
+
+### Stop Containers
+docker-compose down
 
 ## Features
 - Multi-page frontend website
